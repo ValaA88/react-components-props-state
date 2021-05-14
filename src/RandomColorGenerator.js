@@ -8,6 +8,12 @@ const RandomColorGenerator = () => {
   const changeColor = () => {
     setColor(randomColor);
   };
+  const mystyle = {
+    color: 'white',
+    backgroundColor: 'DodgerBlue',
+    padding: '10px',
+    fontFamily: 'Arial',
+  };
   return (
     <div
       style={{
@@ -15,6 +21,7 @@ const RandomColorGenerator = () => {
       }}
     >
       <button onClick={changeColor}>Change Color</button>
+      <text>Erase this Text if you can!</text>
     </div>
   );
 };
